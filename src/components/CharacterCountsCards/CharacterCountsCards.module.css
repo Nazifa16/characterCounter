@@ -1,0 +1,55 @@
+.statsContainer {
+  max-width: 990px;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  max-width: 319px;
+  height: 150px;
+  padding-left: 10px;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+  /* position: relative; */
+}
+
+.value {
+  font-size: 36px;
+  display: flex;
+  align-items: start;
+}
+
+.desc {
+  font-size: 18px;
+  /* opacity: 0.8; */
+  display: flex;
+  align-items: start;
+  font-weight: lighter;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .statsContainer {
+    max-width: 343px;
+    height: 408px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .card {
+    max-width: 343px;
+    height: 116px;
+    padding-left: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+    /* position: relative; */
+  }
+}

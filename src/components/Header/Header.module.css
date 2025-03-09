@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.headerDiv {
+  width: 990px;
+  /* background-color: #12131A; */
+  height: 2.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoDiv {
+  display: flex;
+  gap: 1rem;
+}
+
+.logoDesc {
+  color: #e4e4ef;
+}
+
+.logoDescLight {
+  color: #12131a;
+}
+
+@media (max-width: 768px) {
+  .headerDiv {
+    width: 375px;
+    /* background-color: #12131A; */
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logoDiv img {
+    max-width: 25px;
+    width: 100%;
+    height: 40px;
+  }
+
+  .themeToggle {
+    max-width: 32px;
+    width: 100%;
+    height: 31px;
+  }
+}
