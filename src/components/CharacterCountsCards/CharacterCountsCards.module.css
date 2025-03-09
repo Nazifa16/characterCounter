@@ -45,7 +45,7 @@
   }
   .card {
     max-width: 343px;
-    height: 116px;
+    height: auto;
     padding-left: 10px;
     border-radius: 10px;
     width: 100%;
