@@ -4,11 +4,11 @@ import CharcterCountsCards from "../CharacterCountsCards";
 import LetterDensity from "../LetterDensity";
 
 function TextField() {
-  const [text, setText] = useState("");
   const [excludeSpaces, setExcludeSpaces] = useState(false);
   const [setLimit, setSetLimit] = useState(false);
   const [charLimit, setCharLimit] = useState(300);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [text, setText] = useState(localStorage.getItem("text") || "");
 
   useEffect(() => {
     const handleStorageChange = () => {
@@ -21,6 +21,10 @@ function TextField() {
       window.removeEventListener("storage", handleStorageChange);
     };
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("text", text);
+  }, [text]);
 
   const handleTextChange = (e) => {
     let newText = e.target.value;
